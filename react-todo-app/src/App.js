@@ -13,8 +13,8 @@ function App() {
         <PageTitle>TODO List</PageTitle>
         <div className={styles.app__wrapper}>
           <AppHeader />
-          <Route path="/" exact component={AppContent} />
-          <Route path="/login" component={LoginPage} />
+          <Route path="/" exact component={LoginPage} />
+          <Route path="/todo" component={AppContent} />
         </div>
       </div>
     </Router>
