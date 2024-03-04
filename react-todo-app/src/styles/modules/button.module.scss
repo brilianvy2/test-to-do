@@ -1,5 +1,7 @@
 .button {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: auto;
 	padding: 0.8rem 2rem;
 	border: none;
@@ -10,22 +12,27 @@
 	text-transform: capitalize;
 	cursor: pointer;
 	overflow: hidden;
+	background-color: #007BFF; // Blue background
+	color: #FFD700; // Yellow text
+	margin: auto; // Center the button
+  
 	&__select {
-		color: var(--black-2);
-		font-family: Poppins;
-		padding: 1rem;
-		border: none;
-		background-color: var(--bg-3);
-
-		width: 150px;
-		cursor: pointer;
+	  color: #FFD700; // Yellow text
+	  font-family: Poppins;
+	  padding: 1rem;
+	  border: none;
+	  background-color: #007BFF; // Blue background
+	  width: 150px;
+	  cursor: pointer;
+	  margin: auto; // Center the select button
 	}
-}
+  }
 .button--primary {
-	background-color: var(--primaryPurple);
-	color: var(--white);
+  background-color: #00008B; // Dark blue
+  color: #FFFFE0; // Light yellow
 }
+
 .button--secondary {
-	background-color: var(--bg-3);
-	color: var(--black-1);
+  background-color: #ADD8E6; // Light blue
+  color: #DAA520; // Dark yellow
 }
